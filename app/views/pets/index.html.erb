@@ -6,8 +6,8 @@
       <ul>
         <% @pets.each do |pet| %>
           <li>
-            <h2><%= pet.category %></h2>
-            <h3><%= pet.description %></h3>
+            <h2><%= pet.name %></h2>
+            <h3><%= pet.species %></h3>
             <%= link_to 'view', pet_path(pet) %>
           </li>
         <% end %>

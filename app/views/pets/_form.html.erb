@@ -1,7 +1,7 @@
 <%= simple_form_for pet do |f| %>
-  <%= f.input :category, placeholder: 'Dog, Cat,...' %>
-  <%= f.input :date, label: 'Found on' %>
-  <%= f.input :description %>
+  <%= f.input :name %>
   <%= f.input :address %>
+  <%= f.input :species, placeholder: 'Dog, Cat,...' %>
+  <%= f.input :found_on, label: 'Found on' %>
   <%= f.submit 'submit', class: 'btn btn-primary w-100' %>
 <% end %>

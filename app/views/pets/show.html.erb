@@ -1,1 +1,8 @@
-show.html.erb
+<h1><%= @pet.name %></h1>
+
+<p>Category: <%= @pet.species %></p>
+<p>Found on: <%= @pet.found_on.strftime("%A %-d %B %Y") %></p>
+<p>Found: <%= @pet.address %></p>
+<%= link_to 'home', pets_path %>
+<%= link_to 'edit', edit_pet_path(@pet) %>
+<%= link_to 'remove from lost Kitty', pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" } %>
